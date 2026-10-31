@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documents — AI Summarization Handbook</title>
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/print.css" media="print">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <h1><a href="index.html">AI Summarization Handbook</a> <sub>Asdale Dynamics, LLC</sub></h1>
+    <nav class="site-nav">
+  <ul>
+        <li><a href="index.html">Welcome</a></li>
+    <li><a href="free-tools.html">Free AI tools</a></li>
+    <li><a href="safety.html">Safety & paste safely</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="meeting-notes.html">Meeting notes</a></li>
+    <li><a href="documents.html" class="active">Documents</a></li>
+    <li><a href="emails.html">Emails</a></li>
+    <li><a href="prompt-templates.html">Prompt templates</a></li>
+    <li><a href="local-vs-cloud.html">Local vs cloud</a></li>
+    <li><a href="length-tone.html">Length & tone</a></li>
+    <li><a href="cheatsheet.html">Printable cheat sheet</a></li>
+  </ul>
+</nav>
+  </div>
+</header>
+<main class="container">
+  <article class="">
+    <h1 id="summarizing-documents">Summarizing documents</h1>
+<p>Documents — contracts, policies, reports, manuals — are usually longer and more formal than articles or emails. You often need the <em>structure</em>, not just the gist.</p>
+<h2 id="step-by-step">Step by step</h2>
+<ol>
+<li><strong>Copy the text.</strong> For PDFs, copy-paste the text or use a tool that extracts PDF text. Very long documents may need to be pasted in sections.</li>
+<li><strong>Sanitize.</strong> Replace party names, contract values, account numbers, and dates with placeholders.</li>
+<li><strong>Ask for what you need.</strong> Do you want an executive summary? A clause-by-clause breakdown? A list of obligations and deadlines? Say so.</li>
+<li><strong>Verify critical items.</strong> AI can misread a “shall” as a “may.” Check deadlines, penalties, and payment terms against the original.</li>
+<li><strong>Keep the source.</strong> Never replace a signed contract with an AI summary.</li>
+</ol>
+<h2 id="prompt-templates-for-documents">Prompt templates for documents</h2>
+<p><strong>Executive summary:</strong></p>
+<pre><code>Summarize this document as an executive brief: purpose, key provisions, obligations, deadlines, and risks. Professional tone, max 300 words.
+
+[PASTE DOCUMENT TEXT]
+</code></pre>
+<p><strong>Clause checklist:</strong></p>
+<pre><code>Read this document and list: (1) each major clause or section, (2) what it requires, and (3) any deadlines or dates. Use plain English. Flag anything unusual.
+
+[PASTE DOCUMENT TEXT]
+</code></pre>
+<p><strong>“What do I need to do?”:</strong></p>
+<pre><code>From this document, extract every action or obligation I have. List each with: what to do, by when, and any penalty for missing it. If unclear, say [UNCLEAR].
+
+[PASTE DOCUMENT TEXT]
+</code></pre>
+<h2 id="watch-out-for">Watch out for</h2>
+<ul>
+<li><strong>Length limits:</strong> Free cloud tools may truncate very long documents. Paste sections separately and combine summaries manually.</li>
+<li><strong>Legal weight:</strong> An AI summary is not legal advice. For contracts, leases, or anything with money or liability attached, have a qualified professional review it.</li>
+<li><strong>Scanned PDFs:</strong> If the text is an image (scanned), you will need OCR first. Most AI chat tools cannot read image-only PDFs.</li>
+</ul>
+<blockquote>
+<p><strong>Credit:</strong> Asdale Dynamics, LLC. Copyright (c) 2026 Asdale Dynamics, LLC. MIT License.</p>
+</blockquote>
+  </article>
+  <div class="copyright">
+    Credit: Asdale Dynamics, LLC. &copy; 2026 Asdale Dynamics, LLC.
+    MIT License. <a href="../README.md">Project README</a> &bull;
+    <a href="../LICENSE">License</a>
+  </div>
+</main>
+</body>
+</html>

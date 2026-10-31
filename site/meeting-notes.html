@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meeting notes — AI Summarization Handbook</title>
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/print.css" media="print">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <h1><a href="index.html">AI Summarization Handbook</a> <sub>Asdale Dynamics, LLC</sub></h1>
+    <nav class="site-nav">
+  <ul>
+        <li><a href="index.html">Welcome</a></li>
+    <li><a href="free-tools.html">Free AI tools</a></li>
+    <li><a href="safety.html">Safety & paste safely</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="meeting-notes.html" class="active">Meeting notes</a></li>
+    <li><a href="documents.html">Documents</a></li>
+    <li><a href="emails.html">Emails</a></li>
+    <li><a href="prompt-templates.html">Prompt templates</a></li>
+    <li><a href="local-vs-cloud.html">Local vs cloud</a></li>
+    <li><a href="length-tone.html">Length & tone</a></li>
+    <li><a href="cheatsheet.html">Printable cheat sheet</a></li>
+  </ul>
+</nav>
+  </div>
+</header>
+<main class="container">
+  <article class="">
+    <h1 id="summarizing-meeting-notes">Summarizing meeting notes</h1>
+<p>Meetings generate a lot of words — and not all of them matter. A good summary turns a rambling transcript or rough notes into a short list of <strong>decisions, action items, and next steps.</strong></p>
+<h2 id="step-by-step">Step by step</h2>
+<ol>
+<li><strong>Gather your notes.</strong> Paste raw meeting notes, a transcript, or bullet points from the whiteboard.</li>
+<li><strong>Sanitize first.</strong> Replace attendee names if they are not public, client names, project code names, and dollar figures with placeholders.</li>
+<li><strong>Ask for structure.</strong> Do not just say “summarize.” Ask for decisions, owners, and due dates explicitly.</li>
+<li><strong>Assign owners.</strong> Every action item should have a person and (ideally) a date.</li>
+<li><strong>Send it out.</strong> Share the cleaned summary with attendees so everyone agrees on what happened.</li>
+</ol>
+<h2 id="prompt-templates-for-meetings">Prompt templates for meetings</h2>
+<p><strong>Basic meeting summary:</strong></p>
+<pre><code>Summarize these meeting notes into:
+- Decisions made (what was decided)
+- Action items (who does what, by when)
+- Open questions / next steps
+
+Keep it short and skimmable. Plain English.
+
+[PASTE MEETING NOTES]
+</code></pre>
+<p><strong>Action-item focused:</strong></p>
+<pre><code>Extract every action item from these notes. For each, list: task, owner, due date, and priority (high/medium/low). If a date or owner is missing, mark it [TBD].
+
+[PASTE MEETING NOTES]
+</code></pre>
+<p><strong>Executive brief (for leadership):</strong></p>
+<pre><code>Write a one-paragraph executive summary of this meeting: the goal, the top 2-3 decisions, and the single most important next step. Professional tone, under 150 words.
+
+[PASTE MEETING NOTES]
+</code></pre>
+<h2 id="safety-note-for-meetings">Safety note for meetings</h2>
+<p>Meeting notes often contain client names, unreleased product details, salaries, or health information. <strong>Sanitize before you paste.</strong> If you work in healthcare, HR, or law, prefer a local LLM so nothing leaves your machine.</p>
+<blockquote>
+<p><strong>Credit:</strong> Asdale Dynamics, LLC. Copyright (c) 2026 Asdale Dynamics, LLC. MIT License.</p>
+</blockquote>
+  </article>
+  <div class="copyright">
+    Credit: Asdale Dynamics, LLC. &copy; 2026 Asdale Dynamics, LLC.
+    MIT License. <a href="../README.md">Project README</a> &bull;
+    <a href="../LICENSE">License</a>
+  </div>
+</main>
+</body>
+</html>

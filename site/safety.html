@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safety & paste safely — AI Summarization Handbook</title>
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/print.css" media="print">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <h1><a href="index.html">AI Summarization Handbook</a> <sub>Asdale Dynamics, LLC</sub></h1>
+    <nav class="site-nav">
+  <ul>
+        <li><a href="index.html">Welcome</a></li>
+    <li><a href="free-tools.html">Free AI tools</a></li>
+    <li><a href="safety.html" class="active">Safety & paste safely</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="meeting-notes.html">Meeting notes</a></li>
+    <li><a href="documents.html">Documents</a></li>
+    <li><a href="emails.html">Emails</a></li>
+    <li><a href="prompt-templates.html">Prompt templates</a></li>
+    <li><a href="local-vs-cloud.html">Local vs cloud</a></li>
+    <li><a href="length-tone.html">Length & tone</a></li>
+    <li><a href="cheatsheet.html">Printable cheat sheet</a></li>
+  </ul>
+</nav>
+  </div>
+</header>
+<main class="container">
+  <article class="">
+    <h1 id="safety-data-hygiene-paste-safely">Safety &amp; data hygiene — paste safely</h1>
+<p>This is the most important chapter. <strong>AI summarization is useful, but you control what you paste.</strong> Treat every prompt like a postcard, not a sealed letter — assume it could be seen by the service provider unless you are using a trusted local model you run yourself.</p>
+<h2 id="never-paste">Never paste</h2>
+<p>Never paste these into any AI tool (cloud or otherwise), even “just to test”:</p>
+<ul>
+<li><strong>IDs:</strong> Social Security numbers, driver's license numbers, passport numbers, employee IDs, patient IDs, account numbers</li>
+<li><strong>Financial data:</strong> credit card numbers, bank account numbers, routing numbers, tax IDs, pay stubs, invoices with amounts</li>
+<li><strong>Credentials:</strong> passwords, API keys, secret tokens, sign-in codes</li>
+<li><strong>Private personal data:</strong> home addresses, phone numbers, birthdays, medical diagnoses, medication lists</li>
+<li><strong>Other people's private data:</strong> client lists, patient charts, employee records</li>
+</ul>
+<p>If it would not belong on a public bulletin board, do not paste it into a cloud AI tool.</p>
+<h2 id="before-you-paste-sanitize">Before you paste — sanitize</h2>
+<p>Replace real values with placeholders:</p>
+<table>
+<thead>
+<tr>
+<th>Real value</th>
+<th>Replace with</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Patient name</td>
+<td><code>[PATIENT]</code> or <code>Patient A</code></td>
+</tr>
+<tr>
+<td>Account number</td>
+<td><code>[ACCOUNT #]</code></td>
+</tr>
+<tr>
+<td>Dollar amount</td>
+<td><code>[AMOUNT]</code></td>
+</tr>
+<tr>
+<td>Email address</td>
+<td><code>[EMAIL]</code></td>
+</tr>
+<tr>
+<td>Phone number</td>
+<td><code>[PHONE]</code></td>
+</tr>
+<tr>
+<td>Date of birth</td>
+<td><code>[DOB]</code></td>
+</tr>
+<tr>
+<td>Company/client name</td>
+<td><code>[CLIENT]</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example — unsafe:</strong></p>
+<blockquote>
+<p>"Summarize this invoice from Acme Corp for patient John Doe, account 4488-9921, amount $1,240.00, dated 03/14/2026."</p>
+</blockquote>
+<p><strong>Example — safe:</strong></p>
+<blockquote>
+<p>"Summarize this invoice from <code>[CLIENT]</code> for <code>[PATIENT]</code>, account <code>[ACCOUNT #]</code>, amount <code>[AMOUNT]</code>, dated <code>[DATE]</code>."</p>
+</blockquote>
+<h2 id="extra-safety-habits">Extra safety habits</h2>
+<ul>
+<li>Use <strong>local LLMs</strong> (Ollama, LM Studio) for anything sensitive — nothing leaves your computer</li>
+<li>Turn off “train on my data” / history where the cloud tool offers it</li>
+<li>Do not paste credentials or secrets “just to see if the AI can fix them”</li>
+<li>When in doubt, <strong>sanitize first, then paste</strong></li>
+</ul>
+<h2 id="a-note-for-healthcare-workers">A note for healthcare workers</h2>
+<p>This handbook is <strong>education only, never medical advice.</strong> Do not paste real patient information. Use de-identified, fictional examples when practicing. AI summaries are not a substitute for clinical judgment.</p>
+<blockquote>
+<p><strong>Credit:</strong> Asdale Dynamics, LLC. Copyright (c) 2026 Asdale Dynamics, LLC. MIT License.</p>
+</blockquote>
+  </article>
+  <div class="copyright">
+    Credit: Asdale Dynamics, LLC. &copy; 2026 Asdale Dynamics, LLC.
+    MIT License. <a href="../README.md">Project README</a> &bull;
+    <a href="../LICENSE">License</a>
+  </div>
+</main>
+</body>
+</html>

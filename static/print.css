@@ -1,0 +1,70 @@
+/* Print stylesheet for the printable cheat sheet */
+/* Credit: Asdale Dynamics, LLC */
+
+@media print {
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+
+  header.site-header,
+  nav,
+  footer,
+  .no-print,
+  .print-hide { display: none !important; }
+
+  main { max-width: 100%; }
+
+  article {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 0.5in;
+    margin: 0;
+  }
+
+  article h1 {
+    font-size: 22pt;
+    border-bottom: 2pt solid #000;
+    padding-bottom: 0.25rem;
+    page-break-after: avoid;
+  }
+
+  article h2 {
+    font-size: 15pt;
+    border-bottom: 1pt solid #333;
+    padding-bottom: 0.15rem;
+    margin-top: 1.4em;
+    page-break-after: avoid;
+  }
+
+  article h3 { font-size: 12pt; }
+  article p, article li { font-size: 11pt; }
+
+  pre, code {
+    color: #000;
+    background: #eee !important;
+    page-break-inside: avoid;
+  }
+
+  pre {
+    padding: 0.6rem;
+    border: 1pt solid #999;
+    border-radius: 0;
+  }
+
+  blockquote {
+    border-left: 4pt solid #555;
+    color: #222;
+  }
+
+  table { page-break-inside: avoid; }
+
+  a { color: #000; text-decoration: none; border: none; }
+
+  .page { page-break-after: always; }
+
+  .print-only { display: block !important; }
+}

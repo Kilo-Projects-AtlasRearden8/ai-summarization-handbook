@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emails — AI Summarization Handbook</title>
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/print.css" media="print">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <h1><a href="index.html">AI Summarization Handbook</a> <sub>Asdale Dynamics, LLC</sub></h1>
+    <nav class="site-nav">
+  <ul>
+        <li><a href="index.html">Welcome</a></li>
+    <li><a href="free-tools.html">Free AI tools</a></li>
+    <li><a href="safety.html">Safety & paste safely</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="meeting-notes.html">Meeting notes</a></li>
+    <li><a href="documents.html">Documents</a></li>
+    <li><a href="emails.html" class="active">Emails</a></li>
+    <li><a href="prompt-templates.html">Prompt templates</a></li>
+    <li><a href="local-vs-cloud.html">Local vs cloud</a></li>
+    <li><a href="length-tone.html">Length & tone</a></li>
+    <li><a href="cheatsheet.html">Printable cheat sheet</a></li>
+  </ul>
+</nav>
+  </div>
+</header>
+<main class="container">
+  <article class="">
+    <h1 id="summarizing-emails">Summarizing emails</h1>
+<p>Email is where summarization saves the most time day to day — long threads, invoice chases, meeting requests, and newsletters all shrink into a few lines.</p>
+<h2 id="step-by-step">Step by step</h2>
+<ol>
+<li><strong>Copy the thread.</strong> Paste the full email chain, or the most recent message plus context.</li>
+<li><strong>Sanitize.</strong> Replace sender/recipient names (if private), invoice numbers, amounts, account numbers, and addresses with placeholders.</li>
+<li><strong>Ask for the “so what.”</strong> Decisions, requests, and deadlines matter more than pleasantries.</li>
+<li><strong>Draft the reply.</strong> Use the summary to write a short, clear response.</li>
+</ol>
+<h2 id="prompt-templates-for-emails">Prompt templates for emails</h2>
+<p><strong>Thread summary:</strong></p>
+<pre><code>Summarize this email thread into:
+- What each person wants
+- Decisions made
+- Action items and deadlines
+- Any open questions
+
+Keep it under 100 words, plain English.
+
+[PASTE EMAIL THREAD]
+</code></pre>
+<p><strong>Invoice / payment chase:</strong></p>
+<pre><code>This is an email about an invoice. Extract: invoice number, amount due, due date, payee, and any payment instructions. Flag anything missing. Plain English.
+
+[PASTE EMAIL]
+</code></pre>
+<p><strong>Meeting request:</strong></p>
+<pre><code>Someone is asking me to meet. Extract: proposed date/time, meeting purpose, who is requesting, and how long they want. Draft a short, polite reply accepting or proposing a new time.
+
+[PASTE EMAIL]
+</code></pre>
+<p><strong>Inbox triage:</strong></p>
+<pre><code>I have 20 emails. For each, give me a one-line summary: who it is from, what they want, and whether it needs action today. Plain English.
+
+[PASTE EMAIL LIST]
+</code></pre>
+<h2 id="safety-note-for-email">Safety note for email</h2>
+<p>Email often contains invoices, account numbers, personal data, and confidential business info. <strong>Sanitize before you paste.</strong> For sensitive correspondence, use a local LLM.</p>
+<blockquote>
+<p><strong>Credit:</strong> Asdale Dynamics, LLC. Copyright (c) 2026 Asdale Dynamics, LLC. MIT License.</p>
+</blockquote>
+  </article>
+  <div class="copyright">
+    Credit: Asdale Dynamics, LLC. &copy; 2026 Asdale Dynamics, LLC.
+    MIT License. <a href="../README.md">Project README</a> &bull;
+    <a href="../LICENSE">License</a>
+  </div>
+</main>
+</body>
+</html>
